@@ -1,0 +1,15 @@
+# Example 5 — Prompt Optimization Task
+
+The user's original prompt:
+"Write me a report on finance."
+
+Your tasks:
+1. Rewrite the prompt into a high-quality, optimized version that is:
+   - Specific
+   - Structured
+   - Includes constraints
+   - Defines tone and length
+   - Includes a checklist or evaluation criteria
+
+2. Then write a short explanation (4–5 sentences) describing WHY your optimized prompt is better.
+   Focus on clarity, structure, constraints, user intent, and outcome quality.
