@@ -1,0 +1,18 @@
+# Example 4 — Reasoning Prompt (No Revealed Chain-of-Thought)
+
+Your job is to think through the steps internally and output only the final answer.
+
+Task:
+A company spends ₹2,40,000 per month on paid ads.
+Conversions: 320 per month.
+Average revenue per conversion: ₹3,500.
+
+Calculate:
+- CAC (Customer Acquisition Cost)
+- Monthly revenue
+- ROI percentage
+
+Important:
+- DO NOT reveal intermediate calculations.
+- DO NOT show reasoning.
+- Only output the final numeric results in a clean table.
