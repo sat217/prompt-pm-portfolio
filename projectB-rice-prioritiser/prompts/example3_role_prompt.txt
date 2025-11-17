@@ -1,0 +1,15 @@
+# Example 3 — Role-Based Prompting
+
+You are an expert financial analyst specializing in SaaS valuation.
+Using the data provided below, create:
+1. A 3-sentence executive summary
+2. A concise table of key metrics (Revenue, YoY growth, CAC, LTV)
+3. A valuation range using the EV/Revenue multiplier method
+
+DATA:
+- Company: CloudCore
+- Revenue: $3.2M ARR
+- YoY Growth: 62%
+- CAC: $410
+- LTV: $3,200
+- Industry Multiplier: 8–10x revenue
