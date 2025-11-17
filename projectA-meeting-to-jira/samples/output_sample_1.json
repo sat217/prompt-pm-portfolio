@@ -1,0 +1,52 @@
+{
+  "tasks": [
+    {
+      "title": "Investigate dashboard load issues",
+      "description": "Analyze dashboard performance degradation after the latest release and identify root cause.",
+      "acceptance_criteria": [
+        "Dashboard load time measured",
+        "Analytics widget data pull investigated",
+        "Root cause documented"
+      ],
+      "estimate": "unknown",
+      "assignee_role": "Backend Engineer",
+      "labels": ["performance", "dashboard"]
+    },
+    {
+      "title": "Add missing index to events table",
+      "description": "Optimize the events table by adding the necessary index to improve query performance.",
+      "acceptance_criteria": [
+        "Index added to events table",
+        "Query performance improved",
+        "DB migration tested in staging"
+      ],
+      "estimate": "S",
+      "assignee_role": "Backend Engineer",
+      "labels": ["database", "optimization"]
+    },
+    {
+      "title": "Lazy-load analytics widget",
+      "description": "Improve dashboard load performance by loading the analytics widget only after initial UI render.",
+      "acceptance_criteria": [
+        "Widget loads asynchronously",
+        "Dashboard initial load time reduced",
+        "No broken UI interactions"
+      ],
+      "estimate": "M",
+      "assignee_role": "Frontend Engineer",
+      "labels": ["frontend", "performance"]
+    },
+    {
+      "title": "Verify API caching",
+      "description": "Check if API responses for analytics data are cached and enable caching if missing.",
+      "acceptance_criteria": [
+        "Caching enabled for analytics endpoint",
+        "Cache-hit rate monitored",
+        "Performance improvement recorded"
+      ],
+      "estimate": "unknown",
+      "assignee_role": "Backend Engineer",
+      "labels": ["api", "caching"]
+    }
+  ]
+}
