@@ -1,98 +1,127 @@
-# RICE Prioritiser — AI-Powered Backlog Normalisation & Scoring
+📁 Prompt PM Portfolio
 
-This project converts messy product backlog items into structured **RICE scores** using AI.
-It demonstrates strong practical prompt engineering skills including system design, few-shot prompting, 
-role prompting, reasoning control, evaluation prompts, and optimisation.
+A curated collection of AI-assisted Product & Project Management mini-projects designed to demonstrate problem-solving, documentation skills, and the ability to convert business requirements into structured workflows.
 
----
+This portfolio showcases how prompts, tools, and frameworks can be used to accelerate PM work while still maintaining clarity, structure, and stakeholder-ready outputs.
 
-## 🚀 Project Overview
+📌 Project Structure
 
-Product teams often store backlog notes in unstructured, inconsistent formats.  
-This project uses a carefully engineered prompt system to:
+This repository contains multiple PM mini-projects, each organized in its own folder with documentation, prompts, and samples.
+prompt-pm-portfolio/
+│
+├── projectA-meeting-to-jira/
+│   ├── prompts/
+│   ├── samples/
+│   └── README.md
+│
+├── projectB-rice-prioritiser/
+│   ├── prompts/
+│   ├── samples/
+│   └── README.md
+│
+├── projectC-driver-trip-tracking/
+│   ├── notebook/
+│   ├── prompts/
+│   ├── samples/
+│   └── README.md
+│
+├── cheatsheet/
+└── README.md  ← (this file)
+🎯 Purpose of This Portfolio
 
-- Extract features from messy notes  
-- Assign Reach, Impact, Confidence, Effort  
-- Normalise effort values  
-- Calculate RICE score  
-- Output final prioritised backlog in JSON  
+This portfolio is designed for:
 
-The project includes:
-- A robust system prompt  
-- Instruction prompt  
-- High-quality few-shot examples  
-- 6 advanced prompt engineering exercises  
-- A Jupyter notebook for testing and demonstrating results  
+Internship applications (Product / Project / Program roles)
 
----
+Showcasing hands-on PM skills through practical, small-scale but realistic projects
 
-## 📁 Project Structure
+Demonstrating ability in:
 
+Requirement analysis
 
----
+Workflow design
 
-## 🧠 Prompt Engineering Techniques Demonstrated
+Document creation (Charters, BRDs, SOPs, PRDs)
 
-### 1. **System Prompting**
-Defines behaviour, tone, safety rules, and output structure.
+Prompt engineering for PM tasks
 
-### 2. **Instruction Prompting**
-Gives exact task-level guidelines, constraints, and formatting expectations.
+Stakeholder communication
 
-### 3. **Few-Shot Prompting**
-Shows the model how raw backlog text maps to structured RICE output.
+Process improvement
 
-### 4. **Role-Based Prompting**
-Teaches the model to respond as a domain expert.
+📂 Included Mini-Projects
+1️⃣ Meeting-to-Jira Automation (Project A)
 
-### 5. **Reasoning Control**
-Internal chain-of-thought prompting (CoT suppressed in output).
+A workflow for converting raw meeting notes into structured Jira tickets automatically.
 
-### 6. **Prompt Optimisation**
-Improving user prompts for clarity, constraints, and quality.
+Skills demonstrated:
+Requirement breakdown, user story writing, acceptance criteria, automations.
 
-### 7. **Evaluation Prompting**
-AI performance scoring based on accuracy, completeness, clarity, safety.
+2️⃣ RICE Prioritization Assistant (Project B)
 
----
+A prompt-based tool for prioritizing backlog items using the RICE scoring model.
 
-## 🧪 Running the Notebook
+Skills demonstrated:
+Prioritization frameworks, product thinking, decision-making.
 
-The Jupyter notebook (`notebook/main.ipynb`) loads all prompts and runs them against LLMs.  
-It generates real outputs, proving your prompts work.
+3️⃣ Driver Trip Tracking System (Project C)
 
-This is the piece hiring managers love.
+A full PM documentation set for a trip-tracking application.
+Includes:
 
----
+Project Charter
 
-## 🎯 Why This Project is Portfolio-Ready
+Requirement Doc
 
-- Shows **practical** real-world use (AI for product prioritisation)  
-- Demonstrates **multiple prompt engineering competencies**  
-- Has clean folder structure and documentation  
-- Contains reproducible examples  
-- Includes evaluation and optimisation prompts (rare but valuable)  
+Workflow diagrams
 
-This project alone can win you conversations for:
-- Prompt Engineer Internships  
-- AI Ops roles  
-- PM + AI hybrid roles  
-- LLM QA roles  
-- GenAI product roles  
+Sample data
 
----
+Edge cases
 
-## 📬 Future Enhancements
+Prompts used to generate artifacts
 
-- Add a Streamlit UI for input → RICE scoring  
-- Add embedding-based backlog clustering  
-- Fine-tune a small model for domain-specific scoring  
-- Add integration with Jira/Linear APIs  
+Skills demonstrated:
+End-to-end documentation, process design, data modeling, problem analysis.
 
----
+🧰 Tools & Methodologies Used
 
-## 👤 Author
+Notion
 
-This project was created as part of a guided Prompt Engineering skill-building process.
+Jira
 
+RICE Scoring
 
+Agile & Scrum basics
+
+Prompt engineering for PM tasks
+
+Lightweight data modeling
+
+Workflow diagrams & SOPs
+
+🚀 How to Use This Portfolio
+
+Each project contains:
+
+A detailed README
+
+Prompts used
+
+Samples/output files
+
+Notebook folder (if analysis or multi-step prompts used)
+
+You can explore the project folders individually for detailed documentation.
+
+👤 About the Creator
+
+This portfolio was created as part of a structured learning path to break into Product / Project Management roles, combining:
+
+business understanding
+
+documentation
+
+analytical thinking
+
+prompt engineering
