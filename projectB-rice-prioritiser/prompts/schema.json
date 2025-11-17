@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "RICESchema",
+  "type": "object",
+  "properties": {
+    "prioritised_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "feature": { "type": "string" },
+          "reach": { "type": "number" },
+          "impact": { "type": "number" },
+          "confidence": { "type": "number" },
+          "effort": { "type": "number" },
+          "rice_score": { "type": "number" },
+          "reasoning": { "type": "string" }
+        },
+        "required": [
+          "feature",
+          "reach",
+          "impact",
+          "confidence",
+          "effort",
+          "rice_score",
+          "reasoning"
+        ]
+      }
+    }
+  },
+  "required": ["prioritised_items"]
+}
