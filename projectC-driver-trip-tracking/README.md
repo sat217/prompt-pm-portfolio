@@ -1,165 +1,56 @@
-🧱 1. System Overview
+🛣️ Driver Trip Tracking — AI-Augmented PM Workflow
 
-The Driver Trip Tracking System consists of four integrated layers:
+A real-world project demonstrating how AI can transform ambiguous field data into structured, actionable project information.
 
-Data Capture Layer
+This system takes messy driver trip logs (voice notes, text dumps, shorthand updates) and converts them into a clean, structured trip report — ready for dashboards, task planning, and operations optimization.
 
-Drivers submit trip start/end, distance, location and comments.
+This project showcases:
 
-Data is sent via a mobile form or web UI.
+Prompt engineering
 
-Processing & Storage Layer
+PM workflow design
 
-Backend receives trip data, validates it, stores it in a database.
+Data structuring
 
-Basic rule-based anomaly detection (e.g., long duration, unexpected detours).
+AI-assisted requirement extraction
 
-AI Assistance Layer
+Practical business use cases
 
-AI generates trip summaries for managers
+📌 Problem Statement
 
-AI detects unusual trip patterns
+Transportation teams often receive updates in inconsistent formats:
 
-AI generates daily & weekly insights from trip logs
+Drivers send WhatsApp voice notes
 
-Manager Dashboard
+Field staff send scattered text messages
 
-Trip list
+Trip details are incomplete or unclear
 
-AI-generated summaries
+PMs waste time manually interpreting and documenting data
 
-Alerts for anomalies
+This leads to:
 
-Weekly insight panel
+Poor visibility
 
-                +---------------------------+
-                |    Driver Mobile App      |
-                |  (Trip Start / End Form)  |
-                +-------------+-------------+
-                              |
-                              v
-                     +--------+--------+
-                     |   API Gateway   |
-                     |  (Validation)   |
-                     +--------+--------+
-                              |
-                              v
-                +-------------+-------------+
-                |      Backend Server       |
-                |  Trip Logic & Processing  |
-                +-------------+-------------+
-                              |
-        +---------------------+----------------------+
-        |                                            |
-        v                                            v
-+-----------------------+                +-------------------------+
-|  Database (Trip Log)  |                |     AI Services Layer   |
-|   Postgres / SQLite   | <------------> |  - Trip Summaries       |
-+-----------------------+                |  - Anomaly Detection    |
-                                         |  - Weekly Insights      |
-                                         +------------+------------+
-                                                      |
-                                                      v
-                                         +------------+------------+
-                                         |   Manager Dashboard      |
-                                         | (Web App / Analytics UI) |
-                                         +--------------------------+
+Errors in billing
 
-🤖 3. AI Components
-a. Trip Summary Generator
+Miscommunication
 
-Transforms raw trip data into a 2–3 sentence managerial summary.
+Missing trip metadata
 
-Input example:
-Driver: Rakesh  
-Start: 9:20 AM  
-End: 10:40 AM  
-Distance: 34 km  
-Notes: traffic at bypass  
+Slow reporting
 
-Output example:
-“Rakesh completed a 34 km delivery trip with minor delays due to bypass traffic. No anomalies detected.”
+🎯 Objective
 
-b. Anomaly Detection Engine
+Create an AI-powered workflow that:
 
-Identifies unusual patterns:
+Converts unstructured driver input → structured JSON
 
-Longer-than-normal travel time
+Identifies missing details
 
-Big distance deviation
+Estimates unclear values
 
-Unexpected detours
+Standardizes trip format
 
-Too many stops
+Produces clean outputs for dashboards or downstream tools
 
-Repeated delays across same route
-
-Uses rules + second-pass AI reasoning.
-
-c. Weekly Insights Generator
-
-AI produces:
-
-Most efficient drivers
-
-Common delay causes
-
-Problematic routes
-
-Patterns across the week
-
-Adds high-level managerial value.
-
-🔄 4. Data Flow
-
-Driver → Trip Form → Backend → Database → AI Layer → Dashboard
-Detailed:
-
-Driver submits trip
-
-Backend validates
-
-Data stored in DB
-
-AI generates summary + anomaly score
-
-AI output stored
-
-Dashboard fetches combined data
-
-Manager views insights
-
-📦 5. Component Responsibilities
-Frontend
-
-Trip submission form
-
-Manager dashboard UI
-
-Backend
-
-Trip creation & validation
-
-Business rules
-
-Anomaly pre-check logic
-
-Trigger AI summarisation
-
-Database
-
-Stores trips
-
-Stores anomalies
-
-Stores AI summaries & insights
-
-AI Layer
-
-Prompt templates
-
-Reasoning logic
-
-Summary generation
-
-Insight analysis
