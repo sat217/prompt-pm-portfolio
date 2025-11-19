@@ -209,4 +209,9 @@ This project demonstrates REAL PM + prompt-engineering capability, including:
 
 5.thinking like a PM while executing like a prompt engineer
 
+
+![Project Preview](samples/projectPreview.png)
+![Notebook Preview](samples/notebookPreview.png)
+
+
 6.Recruiters love this because it solves a real business problem with end-to-end technical clarity.
