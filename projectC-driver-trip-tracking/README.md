@@ -6,51 +6,106 @@ This system takes messy driver trip logs (voice notes, text dumps, shorthand upd
 
 This project showcases:
 
-Prompt engineering
+1.Prompt engineering
 
-PM workflow design
+2.PM workflow design
 
-Data structuring
+3.Data structuring
 
-AI-assisted requirement extraction
+4.AI-assisted requirement extraction
 
-Practical business use cases
+5.Practical business use cases
 
 📌 Problem Statement
 
 Transportation teams often receive updates in inconsistent formats:
 
-Drivers send WhatsApp voice notes
+1.Drivers send WhatsApp voice notes
 
-Field staff send scattered text messages
+2.Field staff send scattered text messages
 
-Trip details are incomplete or unclear
+3.Trip details are incomplete or unclear
 
-PMs waste time manually interpreting and documenting data
+4.PMs waste time manually interpreting and documenting data
 
 This leads to:
 
-Poor visibility
+1.Poor visibility
 
-Errors in billing
+2.Errors in billing
 
-Miscommunication
+3.Miscommunication
 
-Missing trip metadata
+4.Missing trip metadata
 
-Slow reporting
+5.Slow reporting
 
 🎯 Objective
 
 Create an AI-powered workflow that:
 
-Converts unstructured driver input → structured JSON
+1.Converts unstructured driver input → structured JSON
 
-Identifies missing details
+2.Identifies missing details
 
-Estimates unclear values
+3.Estimates unclear values
 
-Standardizes trip format
+4.Standardizes trip format
+
+✨ Key Features
+
+AI-based trip interpretation
+Converts messy driver notes into a clean, structured trip report.
+----------------------------------------------------------------
+Automatic field extraction
+Distance, start/end time, locations, issues, delays, expenses.
+----------------------------------------------------------------
+Error + missing info detection
+Flags unclear or incomplete entries.
+----------------------------------------------------------------
+Standardized JSON output
+Ready for dashboards, billing, or PM tools.
+----------------------------------------------------------------
+Reusable prompt workflow
+Consistent outputs across different trip types.
+----------------------------------------------------------------
+Extendable for future automation
+(e.g., auto-logging into Google Sheets, Notion, or dashboards)
+
+🏗️ Technical Architecture
+
+The system follows a simple but scalable pipeline:
+
+Driver Input (Text/Voice Transcribed)
+            ↓
+   AI Prompt Processor
+            ↓
+ Structured Trip JSON
+            ↓
+ Validation Layer
+            ↓
+ Final Trip Summary Output
+
 
 Produces clean outputs for dashboards or downstream tools
 
+Components
+
+Prompts Folder (/prompts)
+Contains the main trip extraction prompt and test inputs.
+----------------------------------------------------------------
+Notebook (/notebooks/driver_trip_processor.ipynb)
+----------------------------------------------------------------
+Loads sample driver inputs
+----------------------------------------------------------------
+Sends them to the AI model
+----------------------------------------------------------------
+Displays structured output
+----------------------------------------------------------------
+Validates missing fields
+----------------------------------------------------------------
+Samples Folder (/samples)
+Contains example inputs and processed outputs.
+----------------------------------------------------------------
+README (this file)
+Documentation explaining system, logic, workflows, and usage.
