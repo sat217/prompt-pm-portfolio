@@ -1,5 +1,5 @@
 🛣️ Driver Trip Tracking — AI-Augmented PM Workflow
-
+---------------------------------------------------
 A real-world project demonstrating how AI can transform ambiguous field data into structured, actionable project information.
 
 This system takes messy driver trip logs (voice notes, text dumps, shorthand updates) and converts them into a clean, structured trip report — ready for dashboards, task planning, and operations optimization.
@@ -17,7 +17,7 @@ This project showcases:
 5.Practical business use cases
 
 📌 Problem Statement
-
+---------------------------------------------------
 Transportation teams often receive updates in inconsistent formats:
 
 1.Drivers send WhatsApp voice notes
@@ -41,7 +41,7 @@ This leads to:
 5.Slow reporting
 
 🎯 Objective
-
+---------------------------------------------------
 Create an AI-powered workflow that:
 
 1.Converts unstructured driver input → structured JSON
@@ -53,27 +53,27 @@ Create an AI-powered workflow that:
 4.Standardizes trip format
 
 ✨ Key Features
-
+---------------------------------------------------
 AI-based trip interpretation
 Converts messy driver notes into a clean, structured trip report.
-----------------------------------------------------------------
+
 Automatic field extraction
 Distance, start/end time, locations, issues, delays, expenses.
-----------------------------------------------------------------
+
 Error + missing info detection
 Flags unclear or incomplete entries.
-----------------------------------------------------------------
+
 Standardized JSON output
 Ready for dashboards, billing, or PM tools.
-----------------------------------------------------------------
+
 Reusable prompt workflow
 Consistent outputs across different trip types.
-----------------------------------------------------------------
+
 Extendable for future automation
 (e.g., auto-logging into Google Sheets, Notion, or dashboards)
 
 🏗️ Technical Architecture
-
+---------------------------------------------------
 The system follows a simple but scalable pipeline:
 
 Driver Input (Text/Voice Transcribed)
@@ -90,22 +90,22 @@ Driver Input (Text/Voice Transcribed)
 Produces clean outputs for dashboards or downstream tools
 
 Components
-
+---------------------------------------------------
 Prompts Folder (/prompts)
 Contains the main trip extraction prompt and test inputs.
-----------------------------------------------------------------
+
 Notebook (/notebooks/driver_trip_processor.ipynb)
-----------------------------------------------------------------
+
 Loads sample driver inputs
-----------------------------------------------------------------
+
 Sends them to the AI model
-----------------------------------------------------------------
+
 Displays structured output
-----------------------------------------------------------------
+
 Validates missing fields
-----------------------------------------------------------------
+
 Samples Folder (/samples)
 Contains example inputs and processed outputs.
-----------------------------------------------------------------
+
 README (this file)
 Documentation explaining system, logic, workflows, and usage.
