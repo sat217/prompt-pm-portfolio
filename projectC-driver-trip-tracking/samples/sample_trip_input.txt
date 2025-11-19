@@ -1,0 +1,17 @@
+Trip Record:
+Driver: Manas
+Vehicle: MH-02-AB-5521
+
+Trip Logs:
+- Pickup from Vashi, 8:30 AM. Traffic heavy. Delay approx 15 mins.
+- Reached Sion at 9:20 AM. Quick halt 5 mins.
+- Proceeded to Fort, Mumbai. Reached at 10:05 AM.
+
+Fuel noted at start: 58%
+Fuel noted at end: 34%
+
+Issues:
+- AC cooling weak.
+- Minor rattle sound near left door.
+
+End of log.
