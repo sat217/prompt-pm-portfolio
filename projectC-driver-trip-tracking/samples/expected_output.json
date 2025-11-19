@@ -1,0 +1,25 @@
+{
+  "driver": "Manas",
+  "vehicle_number": "MH-02-AB-5521",
+  "trips": [
+    {
+      "start_location": "Vashi",
+      "start_time": "08:30",
+      "end_location": "Fort, Mumbai",
+      "end_time": "10:05",
+      "stops": [
+        {
+          "location": "Sion",
+          "duration_minutes": 5
+        }
+      ],
+      "delays_minutes": 15,
+      "issues": [
+        "AC cooling weak",
+        "Minor rattle sound near left door"
+      ],
+      "fuel_start": 58,
+      "fuel_end": 34
+    }
+  ]
+}
