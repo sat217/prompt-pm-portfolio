@@ -381,3 +381,57 @@ Build AI tools that improve team velocity and reduce decision noise
 Create prompt-driven systems that are reliable and repeatable
 
 Ship PM-ready workflows that combine reasoning + execution
+
+🔧 Skills Demonstrated
+-------------------------------
+🧠 Prompt Engineering
+
+Designed a structured system prompt to enforce JSON-only output
+
+Built consistent reasoning rules using refinement constraints
+
+Created few-shot examples for output accuracy and stability
+
+Implemented safety and realism rules to reduce hallucination
+
+📊 Product Thinking & Workflow Automation
+
+Translated an operational PM workflow (driver trip review) into an AI-driven system
+
+Identified what fields matter for business visibility: distance, anomalies, confidence
+
+Applied constraints to ensure PM-grade clarity in summaries
+
+⚙️ AI System Design
+
+Created a clear separation between:
+
+base prompts
+
+refinement rules
+
+few-shot examples
+
+notebook execution
+
+Ensured modular structure so the model behaves consistently across inputs
+
+📁 Technical Execution
+
+Notebook demonstration with real prompts
+
+Structured project architecture (prompts/, samples/, notebooks/)
+
+Screenshot proof for recruiters
+
+GitHub-ready documentation
+
+🎯 What This Shows Recruiters
+
+Ability to integrate AI into real PM workflows
+
+Strong understanding of structured prompting, not “chatting with ChatGPT”
+
+Capability to ship an end-to-end mini-product
+
+High potential for AI PM / Prompt Engineer / AI Product Associate roles
