@@ -189,11 +189,11 @@ Located in:
 
 Includes:
 
-1.extraction.prompt.txt
+1.base_prompt.txt
 
-2.validation.prompt.txt
+2.few_shot_examples.md
 
-3.summarisation.prompt.txt
+3.refinement_rules.md
 
 ⭐ Why This Project Matters
 -----------------------------------------------
@@ -209,7 +209,7 @@ This project demonstrates REAL PM + prompt-engineering capability, including:
 
 5.thinking like a PM while executing like a prompt engineer
 
-6.Recruiters love this because it solves a real business problem with end-to-end technical clarity.
+6.it solves a real business problem with end-to-end technical clarity.
 
 ![Project Preview](samples/projectPreview.png)
 ![Notebook Preview](samples/notebookPreview.png)
@@ -426,12 +426,4 @@ Screenshot proof for recruiters
 
 GitHub-ready documentation
 
-🎯 What This Shows Recruiters
 
-Ability to integrate AI into real PM workflows
-
-Strong understanding of structured prompting, not “chatting with ChatGPT”
-
-Capability to ship an end-to-end mini-product
-
-High potential for AI PM / Prompt Engineer / AI Product Associate roles
