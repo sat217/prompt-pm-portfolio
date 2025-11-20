@@ -14,3 +14,4 @@ SYSTEM RULES:
 
 Your TASK:
 Transform the following trip notes into a clean JSON record.
+
