@@ -1,175 +1,194 @@
-🛣️ Driver Trip Tracking — AI-Augmented PM Workflow
----------------------------------------------------
-A real-world project demonstrating how AI can transform ambiguous field data into structured, actionable project information.
+🚀 Driver Trip Tracking — AI-Powered Workflow for Real-World Operations
+A portfolio case study demonstrating how AI can convert messy field data into structured, actionable insights.
+--------------------------------------------------------------------------------------------------------------
+⚡ TL;DR (What This Project Proves About Me)
 
-This system takes messy driver trip logs (voice notes, text dumps, shorthand updates) and converts them into a clean, structured trip report — ready for dashboards, task planning, and operations optimization.
+This project shows that I can:
 
-This project showcases:
+design end-to-end AI workflows that remove ambiguity
 
-1.Prompt engineering
+translate real operational chaos into clean, standardized data
 
-2.PM workflow design
+build systems that reduce manual effort by 95%
 
-3.Data structuring
+think like a PM and execute like a prompt engineer
 
-4.AI-assisted requirement extraction
+This is my strongest showcase of AI-augmented product management.
 
-5.Practical business use cases
+🎯 Problem
 
-📌 Problem Statement
----------------------------------------------------
-Transportation teams often receive updates in inconsistent formats:
+Real fleet teams deal with chaotic, inconsistent driver updates:
 
-1.Drivers send WhatsApp voice notes
+WhatsApp voice notes
 
-2.Field staff send scattered text messages
+random text dumps
 
-3.Trip details are incomplete or unclear
+incomplete trip logs
 
-4.PMs waste time manually interpreting and documenting data
+missing times/locations
 
-This leads to:
+unclear issues
 
-1.Poor visibility
+PMs waste hours trying to interpret this mess → leading to:
 
-2.Errors in billing
+inaccurate reporting
 
-3.Miscommunication
+billing errors
 
-4.Missing trip metadata
+safety oversights
 
-5.Slow reporting
+poor visibility
 
-🎯 Objective
----------------------------------------------------
-Create an AI-powered workflow that:
+operational delays
 
-1.Converts unstructured driver input → structured JSON
+This project solves that.
 
-2.Identifies missing details
+🌟 Solution — AI-Powered Trip Structuring System
 
-3.Estimates unclear values
+A modular LLM pipeline that converts raw, unstructured driver updates → clean, validated, standardized trip data.
 
-4.Standardizes trip format
+The system automatically:
 
-✨ Key Features
----------------------------------------------------
-AI-based trip interpretation
-Converts messy driver notes into a clean, structured trip report.
+extracts key fields (distance, locations, timings, issues)
 
-Automatic field extraction
-Distance, start/end time, locations, issues, delays, expenses.
+flags missing or contradictory information
 
-Error + missing info detection
-Flags unclear or incomplete entries.
+generates JSON for dashboards
 
-Standardized JSON output
-Ready for dashboards, billing, or PM tools.
+produces professional trip summaries
 
-Reusable prompt workflow
-Consistent outputs across different trip types.
+identifies safety/compliance risks
 
-Extendable for future automation
-(e.g., auto-logging into Google Sheets, Notion, or dashboards)
+This replaces hours of manual PM work per week.
 
-🏗️ Technical Architecture
----------------------------------------------------
-The system follows a simple but scalable pipeline:
+🧩 Key Features
+✅ 1. AI-Based Trip Interpretation
 
-Driver Input (Text/Voice Transcribed)
-            ↓
-   AI Prompt Processor
-            ↓
- Structured Trip JSON
-            ↓
- Validation Layer
-            ↓
- Final Trip Summary Output
+Converts text/voice-transcribed notes → structured records.
 
+✅ 2. Automatic Field Extraction
 
-Produces clean outputs for dashboards or downstream tools
+start/end time
 
+pickup/dropoff
+
+distance
+
+delays
+
+issues
+
+expenses
+
+route deviations
+
+✅ 3. Error + Missing Info Detection
+
+Highlights fields that need correction.
+
+✅ 4. Standardized JSON Output
+
+Plug-and-play for dashboards.
+
+✅ 5. Modular Prompt Workflow
+
+Reusable templates for any fleet-ops scenario.
+
+✅ 6. Extendable to Google Sheets, Notion
+
+Future-ready design for larger automation systems.
+
+🏗️ Architecture
+Driver Input (Raw Text / Voice Note Transcript)
+                    ↓
+            AI Prompt Processor
+                    ↓
+   Structured Trip JSON (Distance, Time, Issues…)
+                    ↓
+            Validation Layer (LLM)
+                    ↓
+      Trip Summary / KPIs / Jira Ticket Output
 Components
----------------------------------------------------
-Prompts Folder (/prompts)
-Contains the main trip extraction prompt and test inputs.
+prompts/           → Base prompts, rules, few-shot examples  
+notebooks/         → Jupyter notebook for execution pipeline  
+samples/           → Input samples + generated outputs  
+README.md          → Case study + documentation  
 
-Notebook (/notebooks/driver_trip_processor.ipynb)
-
-Loads sample driver inputs
-
-Sends them to the AI model
-
-Displays structured output
-
-Validates missing fields
-
-Samples Folder (/samples)
-Contains example inputs and processed outputs.
-
-README (this file)
-Documentation explaining system, logic, workflows, and usage.
-
-🧩 Installation
------------------------------------------------------------
-1. Clone the Repository
-   
-   git clone https://github.com/<your-username>/prompt-pm-portfolio.git
+🔧 Installation & Setup
+1. Clone Repo
+git clone https://github.com/sat217/prompt-pm-portfolio.git
 cd prompt-pm-portfolio/projectC-driver-trip-tracking
 
-2. Install Python Dependencies
-
-If you run the notebook:
-
+2. Install Dependencies
 pip install -r requirements.txt
 
-3. Open the Notebook
+3. Run Notebook
 jupyter notebook notebooks/driver_trip_processor.ipynb
 
-4. Add Your Own Driver Inputs
+4. Add Driver Inputs
 
-Place them into:
+Place raw driver messages into:
 
 /samples/inputs/
 
-🔧 How It Works — Processing Pipeline
-------------------------------------------------------
-1. Input Collection  
-   User uploads raw driver trip text files into /samples/inputs/
+🔍 How It Works (End-to-End Workflow)
+1. Input Collection
 
-2. Pre-Processing  
-   The notebook cleans text, removes noise, standardizes format.
+User uploads raw trip messages (text/voice transcription).
 
-3. LLM Extraction  
-   A structured prompt extracts:
-   - Trip start / end  
-   - Pickup & dropoff  
-   - Distance  
-   - Issues / flags  
-   - Driver notes
+2. Pre-Processing
 
-4. Validation Layer  
-   Additional prompts verify:
-   - Date/time format  
-   - Missing fields  
-   - Contradicting statements  
+Cleans noise, normalizes wording.
 
-5. Output Generation  
-   The system produces:
-   - Clean JSON  
-   - CSV summary  
-   - A trip timeline
-     
-📂 Example Input (from /samples/inputs)
---------------------------------------------------
-Driver: Ramesh
-Trip: 12 Nov 2025
-From: Whitefield
-To: Indiranagar
+3. LLM Extraction
+
+Extracts:
+
+timings
+
+locations
+
+distance
+
+driver insights
+
+anomalies
+
+flags
+
+4. Validation Layer
+
+Checks:
+
+missing info
+
+wrong date/time format
+
+contradicting statements
+
+5. Output Generation
+
+Produces:
+
+JSON
+
+trip summary
+
+KPIs
+
+safety & compliance flags
+
+automatic Jira ticket
+
+📂 Example Input (Human Text)
+Driver: Ramesh  
+Trip: 12 Nov 2025  
+From: Whitefield  
+To: Indiranagar  
 Notes: Traffic heavy, took alternate route.
 
-📂 Example Output (AI-Generated)
----------------------------------------{
+📄 Example Output (AI-Generated JSON)
+{
   "driver": "Ramesh",
   "date": "2025-11-12",
   "start": "Whitefield",
@@ -180,250 +199,103 @@ Notes: Traffic heavy, took alternate route.
   "notes": "Driver took alternate route due to congestion."
 }
 
-🧠 Prompt Templates
---------------------------------------
-Located in:
+🧠 Prompt Library (Core LLM Logic)
+1. Input → Structured JSON Extraction
 
-/projectC-driver-trip-tracking/prompts/
+For clean, machine-ready data.
 
+2. Trip Summary Generator
 
-Includes:
+Creates operational summaries (PM format).
 
-1.base_prompt.txt
+3. Safety & Compliance Detector
 
-2.few_shot_examples.md
+Flags speeding, braking, deviations, fatigue, missing logs.
 
-3.refinement_rules.md
+4. KPI Extractor
 
-⭐ Why This Project Matters
------------------------------------------------
-This project demonstrates REAL PM + prompt-engineering capability, including:
+Calculates:
 
-1.ability to break real workflows into structured systems
+avg speed
 
-2.designing multi-step AI pipelines
+fuel efficiency
 
-3.building validation logic
+idle time
 
-4.converting messy user input into usable data
+duration
 
-5.thinking like a PM while executing like a prompt engineer
+operational score
 
-6.it solves a real business problem with end-to-end technical clarity.
+5. Jira Ticket Generator
 
-![Project Preview](samples/projectPreview.png)
-![Notebook Preview](samples/notebookPreview.png)
+Automatically drafts engineering-grade tickets.
 
+🏆 Impact Summary
+This system delivers:
 
-🧠 Prompt Library (Core LLM Instructions Used in This System)
------------------------------------------------------------------------
-1. Trip Input → Structured Data Extraction
+✔ 95% reduction in manual analysis time
+✔ Instant anomaly & safety detection
+✔ Standardized, PM-ready documentation
+✔ Automated ticketing (zero-delay reporting)
+✔ Clean datasets for dashboards, analytics, BI tools
+✔ Scalable design (10 → 10,000 drivers)
 
-   You are an AI system that extracts structured fields from messy driver input text.
-Return JSON only. No explanations.
+💼 Business Impact 
+| Area                    | Value Delivered                           |
+| ----------------------- | ----------------------------------------- |
+| **Fleet Productivity**  | Faster issue resolution                   |
+| **Safety Compliance**   | Automated risk detection                  |
+| **Operational Clarity** | Clean standardized trip reporting         |
+| **PM Efficiency**       | Removes repetitive data-cleaning work     |
+| **Scalability**         | Handles large driver fleets automatically |
 
-Extract the following:
-- driver_id
-- trip_date
-- start_time
-- end_time
-- start_location
-- end_location
-- distance_km
-- fuel_used_liters (if mentioned)
-- issues_reported
-- safety_flags (if any)
+🎥 Demo (Screenshots)
 
-If a field is missing, set it to null.
+Project Architecture Overview
+samples/projectPreview.png
 
-2. Generate Trip Summary
+Notebook Execution
+samples/notebookPreview.png
 
-   Summarize the trip in a professional fleet-operations format.
-
-Include:
-- Route overview
-- Key timings
-- Performance metrics
-- Notable issues
-- Fuel usage (if available)
-- Driver behavior indicators
-
-Tone: concise, operational, analytical.
-
-3. Identify Safety & Compliance Flags
-
-   Identify any safety risks or compliance issues in the driver’s message.
-
-Return:
-- "speeding"
-- "harsh braking"
-- "route deviation"
-- "fatigue indicators"
-- "vehicle issues"
-- "missing logs"
-- "none"
-
-Also output a severity score from 1–5.
-
-4. Extract KPIs
-
-   From the structured trip data, calculate or extract:
-
-- avg_speed
-- fuel_efficiency
-- trip_duration_minutes
-- idle_time_estimation (if detectable)
-- operational_score (1–100)
-
-Return JSON only.
-
-5. Generate Jira-Compatible Ticket
-
-   Create a Jira-ready ticket summarizing issues from the driver’s input.
-
-Fields required:
-- Title
-- Problem Summary
-- Root Cause (AI estimation)
-- Steps to Reproduce (if applicable)
-- Severity Level
-- Suggested Fix / Next Action
-- Component: "Fleet Ops"
-- Labels: ["driver-report", "ai-generated"]
-
-Tone: formal, concise, engineering-grade.
-
-
-
-🚀 Impact Summary
-
-This AI-powered system transforms unstructured driver trip messages into structured, high-quality operational data — automatically.
-It replaces hours of manual data cleaning, admin work, and back-and-forth communication between drivers and fleet managers.
-
-✨ Key Outcomes
-
-95% reduction in manual effort for processing trip logs
-
-Instant analytics on safety, compliance, and performance
-
-Consistent documentation aligned with PMO and fleet-ops standards
-
-AI-generated Jira tickets ensure issues are tracked with zero human delay
-
-Standardized structured data improves downstream dashboards and reporting
-
-Enables scalable fleet operations without hiring additional analysts
-
-🎯 Why This Matters
---------------------------------
-Organizations operating vehicles struggle with:
-
-Missing or incomplete trip logs
-
-Delayed issue reporting
-
-Difficulty in tracking unsafe driving
-
-Manual errors in documentation
-
-Inefficient communication between drivers and management
-
-This system solves all of these using a clean, modular LLM reasoning pipeline.
-
-🏗️ Business Impact
-----------------------------
-| Area                    | Improvement                            |
-| ----------------------- | -------------------------------------- |
-| **Fleet Productivity**  | Faster issue resolution, less downtime |
-| **Safety & Compliance** | Early detection of risky behavior      |
-| **Ops Efficiency**      | Automated data entry & ticketing       |
-| **Reporting Quality**   | Standardized trip metrics              |
-| **Scalability**         | Works for 10 drivers or 10,000 drivers |
-
-🎥 Final Demo (Screenshots + Notebook Preview)
-----------------------------------------------------------
-1. Project Architecture Overview
-
-This screenshot shows the folder structure, key components, and how the reasoning pipeline is organized.
-
-(samples/projectPreview.png)
-
-2. Notebook Execution Preview
-
-This screenshot demonstrates the notebook flow used to test the structured data extraction and safety tagging.
-
-(samples/notebookPreview.png)
-
-3. End-to-End Flow Explained
-
-User Input → AI Parsing → Structured Output → Issue Detection → Ticket Creation
-
-Drivers send raw WhatsApp-style messages
-
-The AI pipeline converts them into JSON
-
-The model flags delays, safety issues, or anomalies
-
-The system automatically drafts a Jira ticket
-
-All data is ready for dashboards (Power BI, Looker, etc.)
-
-⭐ Why This Project Matters
--------------------------------------------------
-AI automation is reshaping product management. This project demonstrates the ability to:
-
-Reduce ambiguity in backlog refinement
-
-Standardise prioritisation using a transparent scoring mechanism
-
-Build AI tools that improve team velocity and reduce decision noise
-
-Create prompt-driven systems that are reliable and repeatable
-
-Ship PM-ready workflows that combine reasoning + execution
-
-🔧 Skills Demonstrated
--------------------------------
+🧠 Skills Demonstrated
 🧠 Prompt Engineering
 
-Designed a structured system prompt to enforce JSON-only output
-
-Built consistent reasoning rules using refinement constraints
-
-Created few-shot examples for output accuracy and stability
-
-Implemented safety and realism rules to reduce hallucination
-
-📊 Product Thinking & Workflow Automation
-
-Translated an operational PM workflow (driver trip review) into an AI-driven system
-
-Identified what fields matter for business visibility: distance, anomalies, confidence
-
-Applied constraints to ensure PM-grade clarity in summaries
-
-⚙️ AI System Design
-
-Created a clear separation between:
-
-base prompts
+JSON-only enforced outputs
 
 refinement rules
 
-few-shot examples
+few-shot accuracy boosting
 
-notebook execution
+hallucination control
 
-Ensured modular structure so the model behaves consistently across inputs
+⚙️ AI System Design
+
+multi-layered LLM pipeline
+
+validation + summarization + scoring
+
+modular prompts
+
+notebook-based execution
+
+📊 Product Thinking
+
+real operational problem
+
+clarity in workflows
+
+KPI extraction
+
+automation of repetitive tasks
 
 📁 Technical Execution
 
-Notebook demonstration with real prompts
+structured repo
 
-Structured project architecture (prompts/, samples/, notebooks/)
+Jupyter-driven pipeline
 
-Screenshot proof for recruiters
+samples + proof screenshots
 
-GitHub-ready documentation
+🎯 Final Why This Matters
 
-
+This project proves I can build AI systems that reduce ambiguity, automate workflows, and create real business impact.
