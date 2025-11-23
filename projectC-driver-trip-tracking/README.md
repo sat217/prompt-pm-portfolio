@@ -252,10 +252,10 @@ This system delivers:
 🎥 Demo (Screenshots)
 
 Project Architecture Overview
-samples/projectPreview.png
+(samples/projectPreview.png)
 
 Notebook Execution
-samples/notebookPreview.png
+(samples/notebookPreview.png)
 
 🧠 Skills Demonstrated
 🧠 Prompt Engineering
