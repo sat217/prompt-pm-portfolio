@@ -1,7 +1,8 @@
 🚀 Driver Trip Tracking — AI-Powered Workflow for Real-World Operations
 A portfolio case study demonstrating how AI can convert messy field data into structured, actionable insights.
 --------------------------------------------------------------------------------------------------------------
-⚡ TL;DR (What This Project Proves About Me)
+⚡ What This Project Proves About Me
+-----------------------------------
 
 This project shows that I can:
 
@@ -16,7 +17,7 @@ think like a PM and execute like a prompt engineer
 This is my strongest showcase of AI-augmented product management.
 
 🎯 Problem
-
+-----------
 Real fleet teams deal with chaotic, inconsistent driver updates:
 
 WhatsApp voice notes
@@ -44,7 +45,7 @@ operational delays
 This project solves that.
 
 🌟 Solution — AI-Powered Trip Structuring System
-
+-------------------------------------------------
 A modular LLM pipeline that converts raw, unstructured driver updates → clean, validated, standardized trip data.
 
 The system automatically:
@@ -62,6 +63,7 @@ identifies safety/compliance risks
 This replaces hours of manual PM work per week.
 
 🧩 Key Features
+-------------------
 ✅ 1. AI-Based Trip Interpretation
 
 Converts text/voice-transcribed notes → structured records.
@@ -99,6 +101,7 @@ Reusable templates for any fleet-ops scenario.
 Future-ready design for larger automation systems.
 
 🏗️ Architecture
+------------------
 Driver Input (Raw Text / Voice Note Transcript)
                     ↓
             AI Prompt Processor
@@ -115,6 +118,7 @@ samples/           → Input samples + generated outputs
 README.md          → Case study + documentation  
 
 🔧 Installation & Setup
+--------------------------
 1. Clone Repo
 git clone https://github.com/sat217/prompt-pm-portfolio.git
 cd prompt-pm-portfolio/projectC-driver-trip-tracking
@@ -132,6 +136,7 @@ Place raw driver messages into:
 /samples/inputs/
 
 🔍 How It Works (End-to-End Workflow)
+-------------------------------------
 1. Input Collection
 
 User uploads raw trip messages (text/voice transcription).
@@ -181,6 +186,7 @@ safety & compliance flags
 automatic Jira ticket
 
 📂 Example Input (Human Text)
+------------------------------
 Driver: Ramesh  
 Trip: 12 Nov 2025  
 From: Whitefield  
@@ -188,6 +194,7 @@ To: Indiranagar
 Notes: Traffic heavy, took alternate route.
 
 📄 Example Output (AI-Generated JSON)
+----------------------------------
 {
   "driver": "Ramesh",
   "date": "2025-11-12",
@@ -200,6 +207,7 @@ Notes: Traffic heavy, took alternate route.
 }
 
 🧠 Prompt Library (Core LLM Logic)
+-------------------------------------
 1. Input → Structured JSON Extraction
 
 For clean, machine-ready data.
@@ -231,6 +239,7 @@ operational score
 Automatically drafts engineering-grade tickets.
 
 🏆 Impact Summary
+----------------
 This system delivers:
 
 ✔ 95% reduction in manual analysis time
@@ -241,6 +250,7 @@ This system delivers:
 ✔ Scalable design (10 → 10,000 drivers)
 
 💼 Business Impact 
+----------------------
 | Area                    | Value Delivered                           |
 | ----------------------- | ----------------------------------------- |
 | **Fleet Productivity**  | Faster issue resolution                   |
@@ -250,14 +260,15 @@ This system delivers:
 | **Scalability**         | Handles large driver fleets automatically |
 
 🎥 Demo (Screenshots)
-
+---------------------------
 Project Architecture Overview
-(samples/projectPreview.png)
+https://github.com/sat217/prompt-pm-portfolio/blob/main/projectC-driver-trip-tracking/samples/projectPreview.png
 
 Notebook Execution
-(samples/notebookPreview.png)
+https://github.com/sat217/prompt-pm-portfolio/blob/main/projectC-driver-trip-tracking/samples/notebookPreview.png
 
 🧠 Skills Demonstrated
+--------------------------
 🧠 Prompt Engineering
 
 JSON-only enforced outputs
@@ -297,5 +308,6 @@ Jupyter-driven pipeline
 samples + proof screenshots
 
 🎯 Final Why This Matters
+--------------------------
 
 This project proves I can build AI systems that reduce ambiguity, automate workflows, and create real business impact.
